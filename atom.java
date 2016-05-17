@@ -6,7 +6,7 @@ RVector velocity;
 
   atom(int x, int y){
     location = new RVector(x, y);
-    velocity = new RVector(random(5), random(5));
+    velocity = new RVector(Math.random()*5, Math.random()*5);
   }
   
   
