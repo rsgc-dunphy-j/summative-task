@@ -2,16 +2,14 @@
 
 ## Overall goal
 
-To make a game about going from a single carbon to a long, complex organic compound.
-The game will be completed in processing using java coding knowledge and organized through github. 
+To make an interactive chemistry experience where you can make atoms that bounce around and bond with each other. This is focused on organic chemistry so it will only include Carbon, Hydrogen, and Oxygen.
+The simulation will be completed in processing using java coding knowledge and organized through github. 
 
-Free floating, randomly generated atoms will be floating around in space and you, Carbon Chris need to gather electric potential and bond to them. Once all of your orbitals are filled, you get a game over and your score is recorded. The longer your carbon chain, the higher the score. 
+Using the keyboard the user can generate atoms that spawn at the mouse cursor with random velocities. They bounce off the edges of the screen and when they bounce off of each other they form bonds, if they are available. Carbon can bond 4 times, Oxygen can bond 2 times, and Hydrogen can bond once.
 
 ## Sub-goals
 
--Create an atom class that has properties of element, bond numbers, size, and colour.
--Extend atom with oxygen, hydrogen, carbon, and chlorine for bonus points*
--Extend carbon to make Carbon Chris the player character. 
--Create an environment with randomly appearing atoms on the edges
--Establish a scoring system for molecules
-
+-Create an atom class that has properties of element, bonds numbers, size, and colour.
+-Extend atom with oxygen, hydrogen, carbon
+-Modify bouncer code to allow atoms to bond into molecules
+-Possibly find a way to make double bonds?
