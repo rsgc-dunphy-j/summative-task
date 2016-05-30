@@ -1,8 +1,8 @@
+//holds all of the atoms generated
 ArrayList<atom> atoms = new ArrayList<atom>();
 
 void setup() {
   size(600, 600);
-  //atoms.add(new carbon(300,300));
 }
 
 void draw() {
@@ -25,13 +25,14 @@ void collision(atom a, atom b){
   //finds the hypotenuse of the atoms and checks if theyre less than the discance between the centres :: 
   if(sqrt(pow(a.location.x-b.location.x,2)+pow(a.location.y-b.location.y,2)) < (a.size/2)+(b.size/2) && a.bonds > 0 && b.bonds > 0){
     
+    //if their velocities are not equal (unbound) 
     if(a.velocity.mag() != b.velocity.mag()){
      a.bonds-=1;
      b.bonds-=1;
      println(a.velocity.mag());
      println(b.velocity.mag());
     }
-    
+    //averages their velocities to "bind" them
     a.velocity.x = (int)(a.velocity.x+b.velocity.x)/2;
     a.velocity.y = (int)(a.velocity.y+b.velocity.y)/2;
     b.velocity.x = (int)(a.velocity.x+b.velocity.x)/2;
