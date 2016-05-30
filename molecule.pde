@@ -30,8 +30,9 @@ void collision(atom a, atom b){
     b.velocity.x = (a.velocity.x+b.velocity.x)/2;
     b.velocity.y = (a.velocity.y+b.velocity.y)/2;  
     
-    a.bonds -= 1;
-    b.bonds -= 1; 
+    //see: other version for bond subtractions
+    //a.bonds -= 1;
+    //b.bonds -= 1; 
     
   }
 
