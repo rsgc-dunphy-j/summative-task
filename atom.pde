@@ -1,15 +1,14 @@
 class atom {
   int size;
-  char element;
   int bonds;
   RVector location;
   RVector velocity;
-
+//generates the atom(see RVector constructor) with a random velocity vector
   atom(int x, int y) {
     location = new RVector(x, y);
     velocity = new RVector(random(12)-6, random(12)-6);
   }
-
+//renders and colours the atom, moves it, and checks its velocity
   void be() {
     color c = color(0,0,0);
     fill(c);
@@ -17,7 +16,7 @@ class atom {
     location.add(velocity);
     this.checkEdges();
   }
-
+//if the atom approaches an edge, it moves to the other edge
 void checkEdges() {
     if (location.x>width){
       location.x=0;
