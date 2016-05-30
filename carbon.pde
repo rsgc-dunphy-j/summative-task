@@ -4,9 +4,8 @@ class carbon extends atom {
   super(x, y);
   size = 12;
   bonds = 4;
-  element = 'C';
  }
- 
+   //Renders the atom, moves it, and checks for edge collisions
    void be() {
     color c = color(50,50,50);
     fill(c);
