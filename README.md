@@ -15,6 +15,7 @@ Using the keyboard the user can generate atoms that spawn at the mouse cursor wi
 -Possibly find a way to make double bonds?
 
 QUESTIONS:
+
 1. What (if anything – although there is probably at least something) does the user need to know about what your program does?
 It generates the three main molecules involved in organic chemistry: carbon, oxygen, and hydrogen. Each can only bond a set number of times, and if it is knocked off of a bond by a faster atom, it loses those bonding electrons forever (although this is not necessarily how it works all the time in the real world)
 
