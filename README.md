@@ -21,15 +21,21 @@ It generates the three main molecules involved in organic chemistry: carbon, oxy
 
 2. What (if anything) does the user need to know to operate your program (keystrokes, et cetera)?
 Pressing C generates a carbon atom at the mouse, while H and O do the same thing with hydrogen and oxygen respectively.
+https://github.com/rsgc-dunphy-j/summative-task/blob/master/molecule-bond.pde#L46-L57
 
 3. How does your program show evidence of your understanding of object-oriented programming concepts like encapsulation and inheritance?
 I made a superclass "atom" that gives a few base classes that are extended by carbon, hydrogen, and oxygen. This allows these core classes to remain concise and simple. Atom contains all of the parameters that these atoms need to run such as bond count, and size. It also contains a method that checks the edges of the screen.
+https://github.com/rsgc-dunphy-j/summative-task/blob/master/atom.pde
 
 4. What evidence can you provide that your program is human-readable?
 It would be easier to provide the one example of non readable code in the project. Although there is a comment describing the function, the be() function may be a confusing name. I chose it because it allows the atom to "be" an atom. Other readable methods are named checkEdges() to check if the atom is hitting the edge of the screen, keyPressed() to check what key has been pressed (although that is included in processing). collision() may have some confusing code in it, but it is well commented and is named appropriately. All variables are named appropriately, bonds represents the number of times a given element can bond, atoms is an arraylist of all atoms in the simulation, and size is the size of the atom. 
+be():https://github.com/rsgc-dunphy-j/summative-task/blob/master/atom.pde#L12-L18
+checkEdges():https://github.com/rsgc-dunphy-j/summative-task/blob/master/atom.pde#L20-L34
+collision():https://github.com/rsgc-dunphy-j/summative-task/blob/master/molecule-bond.pde#L24-L43
 
 5. What is the most important algorithm, or algorithm(s), in your program?
 That would be the collision() method because that is where the code responsible for bonding atoms is. It averages the velocities of the two colliding atoms and then reduces their bond values by 1.
+https://github.com/rsgc-dunphy-j/summative-task/blob/master/molecule-bond.pde#L24-L43
 
 6. How have you made your program easy to use?
 The readme contains the controls, other than that its just a matter of pressing the keys and watching the chemistry!
